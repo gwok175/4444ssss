@@ -1,1 +1,111 @@
+* { margin:0; padding:0; box-sizing:border-box; }
 
+body.dark-hard {
+    background: linear-gradient(135deg, #8B0000, #FF4500, #1C1C1C);
+    color: #fff;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.75);
+    z-index: 1;
+}
+
+.logo-center {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+}
+
+.logo {
+    font-size: 6.5rem;
+    letter-spacing: 8px;
+    color: #FF4500;
+    text-shadow: 0 0 40px #FF0000, 4px 4px 0 #000;
+    line-height: 1;
+}
+
+.tagline {
+    font-size: 1.4rem;
+    letter-spacing: 6px;
+    color: #CCC;
+    margin-top: 10px;
+}
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(20,20,20,0.95);
+    padding: 40px 50px;
+    border: 3px solid #FF4500;
+    width: 90%;
+    max-width: 520px;
+    z-index: 3;
+    box-shadow: 0 0 60px rgba(255,69,0,0.6);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #FF4500;
+    text-transform: uppercase;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 18px;
+    background: #1C1C1C;
+    border: 2px solid #666;
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: 'Arial Black', sans-serif;
+    text-transform: uppercase;
+}
+
+input:focus, textarea:focus {
+    border-color: #FF4500;
+    outline: none;
+    box-shadow: 0 0 15px #FF4500;
+}
+
+.warning-box {
+    background: #330000;
+    border: 2px solid #FF0000;
+    padding: 15px;
+    margin: 20px 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 20px;
+    background: #FF4500;
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-enviar:hover {
+    background: #fff;
+    color: #FF4500;
+    transform: scale(1.03);
+}
