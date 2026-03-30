@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NITN4S - Acesso Restrito</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="dark-hard">
+    <div class="overlay"></div>
+    
+    <header class="logo-center">
+        <h1 class="logo">NITN4S</h1>
+        <p class="tagline">HARDCORE BRASILEIRO SEM LIMITES</p>
+    </header>
+
+    <div class="form-container" id="formContainer">
+        <h2>RELATÓRIO DE ACESSO</h2>
+        <form id="accessForm">
+            <input type="text" name="nome" placeholder="NOME COMPLETO" required>
+            <input type="text" name="rede" placeholder="REDE SOCIAL PRINCIPAL (X, IG, TG...)" required>
+            <input type="text" name="vertente" placeholder="VERTENTE / RAMO DE ATUAÇÃO" required>
+            <textarea name="como_encontrou" placeholder="BREVE TEXTO: COMO ENCONTROU O SITE?" required></textarea>
+            
+            <div class="warning-box">
+                <p>⚠️ CONTEÚDO EXPLÍCITO HARDCORE – 18+ APENAS<br>
+                Imagens, vídeos e áudio de sexo real sem censura. Ao enviar você confirma ter mais de 18 anos e aceita os termos.</p>
+            </div>
+
+            <button type="submit" class="btn-enviar">ENVIAR RELATÓRIO E RECEBER SENHA</button>
+        </form>
+    </div>
+
+    <audio id="hammerSound" preload="auto">
+        <source src="https://freesound.org/data/previews/276/276951_5123854-lq.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
